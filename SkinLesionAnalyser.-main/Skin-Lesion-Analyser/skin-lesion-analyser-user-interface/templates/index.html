@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skin Lesion Detectron</title>
+  <link rel="stylesheet" href="static/styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Skin Lesion Analyzer</h1>
+      <p>Detection done by cutting edge ML Model Mask-R-CNN</p>
+    </header>
+    <div class="content">
+      <form id="uploadForm">
+        <div class="upload-area">
+          <div class="dropzone">
+            <p>Drag & Drop your video or image here</p>
+            <p>OR</p>
+            <label for="fileInput">
+              <input type="file" id="fileInput" accept="video/*,image/*">
+              Browse Files
+            </label>
+          </div>
+          <div class="progress-bar hidden">
+            <div class="progress"></div>
+          </div>
+          <div id="loadingIndicator" style="display: none;"></div>
+        </div>
+        <div class="result hidden">
+          <h3>Analysis Result:</h3>
+          <img id="analyzedImage" src="" alt="Analyzed Image" style="display: none;">
+          <p id="prediction"></p>
+          
+        </div>
+      </form>
+    </div>
+  </div>
+  <script src="static/script.js"></script>
+</body>
+</html>

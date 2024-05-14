@@ -1,0 +1,114 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff; /* White background */
+  color: #333; /* Dark text for contrast */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 50px 0;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+h1 {
+  font-size: 3em;
+  font-weight: lighter; /* Lighter weight for a clean look */
+  margin-bottom: 10px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 600px;
+  background-color: #f5f5f5; /* Light gray background for content area */
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  padding: 30px;
+}
+
+.upload-area {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.dropzone {
+  border: 2px dashed #ddd;
+  padding: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #999;
+}
+
+.dropzone p {
+  margin-bottom: 10px;
+  font-size: 16px; /* Smaller font size for a cleaner look */
+}
+
+.dropzone label {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #3498db; /* Blue button color */
+  color: #fff; /* White text for button */
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  font-size: 14px; /* Smaller font size for consistency */
+}
+
+.dropzone label:hover {
+  background-color: #2980b9; /* Darker blue on hover */
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.progress-bar {
+  height: 5px;
+  background-color: #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progress {
+  width: 0%;
+  height: 100%;
+  background-color: #3498db; /* Blue progress bar color */
+  transition: width 0.5s ease-in-out;
+}
+
+.result {
+    /* Border and background */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f5f5f5; /* Light gray background for a subtle separation */
+  
+    /* Padding and margin */
+    padding: 15px;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr;  /* One column for all elements */
+    place-items: center;
+  
+    /* Optional: Add a subtle shadow for depth */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+#prediction {
+  font-weight: bold;
+  font-size: 16px; /* Consistent font size */
+}
+
+.hidden {
+  display: none;
+}
